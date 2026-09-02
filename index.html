@@ -11,7 +11,8 @@
 <meta property="og:type" content="website">
 <style>
   :root{
-    --bg:#0b0907; --ink:#efe7da; --muted:#8d8272; --sun:#f0a92c; --line:#221c14;
+    --bg:#fffdf6; --ink:#332612; --muted:#8a7a60; --sun:#f5a623; --deep:#b45309;
+    --line:#f0e4cc; --glow:rgba(250,190,60,.5);
   }
   *{box-sizing:border-box}
   html,body{height:100%}
@@ -20,54 +21,69 @@
     font:16px/1.7 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     display:flex; flex-direction:column;
-    background-image:radial-gradient(120vw 70vh at 50% 118%, rgba(240,169,44,.14), transparent 62%);
+    background-image:
+      radial-gradient(90vw 60vh at 72% -18%, var(--glow), transparent 60%),
+      radial-gradient(120vw 50vh at 50% 112%, rgba(255,214,140,.45), transparent 65%),
+      linear-gradient(180deg, #fef6e4 0%, var(--bg) 46%);
     background-repeat:no-repeat;
   }
   main{
     flex:1 0 auto; width:min(760px,88vw); margin-inline:auto;
     display:flex; flex-direction:column; justify-content:center;
-    padding:14vh 0 9vh;
+    padding:13vh 0 8vh;
   }
-  .mark{display:block;margin-bottom:44px}
+  .mark{display:block;margin-bottom:40px;filter:drop-shadow(0 0 9px rgba(250,190,60,.75))}
   .mark circle{fill:var(--sun)}
-  .mark g{stroke:var(--sun);stroke-width:6;stroke-linecap:round;opacity:.85}
+  .mark g{stroke:var(--sun);stroke-width:6;stroke-linecap:round}
   @media (prefers-reduced-motion:no-preference){
     .mark g{animation:turn 64s linear infinite;transform-origin:50px 50px}
     @keyframes turn{to{transform:rotate(360deg)}}
   }
   h1{
     font-size:clamp(2.4rem,8vw,4.2rem); line-height:1.02; letter-spacing:-.035em;
-    margin:0 0 26px; font-weight:600;
+    margin:0 0 26px; font-weight:650;
   }
-  .lede{font-size:clamp(1.05rem,2.6vw,1.25rem); color:var(--muted); margin:0; max-width:46ch}
+  h1 em{font-style:normal; color:var(--deep)}
+  .lede{font-size:clamp(1.05rem,2.6vw,1.25rem); color:#6b5b41; margin:0; max-width:46ch}
+  .badge{
+    display:inline-flex; align-items:center; gap:8px; align-self:flex-start;
+    margin:34px 0 0; padding:9px 16px; border-radius:999px;
+    background:#fff; border:1px solid var(--line);
+    box-shadow:0 2px 14px rgba(210,160,60,.14);
+    font-size:.88rem; color:var(--deep); font-weight:600; letter-spacing:.01em;
+  }
+  .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--sun);
+    box-shadow:0 0 0 4px rgba(245,166,35,.22)}
   .figures{
     display:flex; flex-wrap:wrap; gap:38px 56px;
-    margin:64px 0 0; padding:34px 0 0; border-top:1px solid var(--line); list-style:none;
+    margin:58px 0 0; padding:34px 0 0; border-top:1px solid var(--line); list-style:none;
   }
   .figures div{min-width:110px}
-  .n{display:block;font-size:2rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--sun)}
+  .n{display:block;font-size:2rem;font-weight:650;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--deep)}
   .l{display:block;font-size:.83rem;color:var(--muted);line-height:1.45;max-width:19ch}
-  .fine{margin:38px 0 0;font-size:.82rem;color:#6d6558;max-width:58ch}
+  .fine{margin:38px 0 0;font-size:.82rem;color:#9c8c6e;max-width:58ch}
   footer{
     flex:none; width:min(760px,88vw); margin-inline:auto;
     padding:26px 0 44px; border-top:1px solid var(--line);
     font-size:.84rem; color:var(--muted);
     display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
   }
-  footer a{color:var(--muted)}
-  footer a:hover{color:var(--sun)}
+  footer a{color:#8a6d3b}
+  footer a:hover{color:var(--deep)}
 </style>
 </head>
 <body>
 
 <main>
-  <svg class="mark" width="38" height="38" viewBox="0 0 100 100" role="img" aria-label="My Sun Log">
+  <svg class="mark" width="44" height="44" viewBox="0 0 100 100" role="img" aria-label="My Sun Log">
     <circle cx="50" cy="50" r="20"/>
     <g><path d="M50 8v13M50 79v13M8 50h13M79 50h13M20 20l9 9M71 71l9 9M80 20l-9 9M29 71l-9 9"/></g>
   </svg>
 
-  <h1>My Sun Log</h1>
+  <h1>Make the most<br>of <em>your sun</em>.</h1>
   <p class="lede">Solar position, the spectrum arriving now, and the dose it carries. Computed on your device, from published physics, with the radios off.</p>
+
+  <span class="badge"><span class="dot"></span>Android &amp; iOS — coming soon</span>
 
   <div class="figures">
     <div><span class="n">7 min</span><span class="l">toward the vitamin D dose</span></div>

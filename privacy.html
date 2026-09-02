@@ -11,27 +11,33 @@
 <meta property="og:type" content="website">
 <style>
   :root{
-    --bg:#0b0907; --ink:#efe7da; --muted:#8d8272; --sun:#f0a92c; --line:#221c14;
+    --bg:#fffdf6; --ink:#332612; --muted:#8a7a60; --sun:#f5a623; --deep:#b45309;
+    --line:#f0e4cc; --glow:rgba(250,190,60,.45);
   }
   *{box-sizing:border-box}
   body{
     margin:0; background:var(--bg); color:var(--ink);
     font:16px/1.7 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(90vw 42vh at 72% -16%, var(--glow), transparent 60%),
+      linear-gradient(180deg, #fef6e4 0%, var(--bg) 40%);
+    background-repeat:no-repeat;
   }
   main{width:min(680px,88vw); margin-inline:auto; padding:9vh 0 6vh}
-  .mark{display:block;margin-bottom:36px}
+  .mark{display:block;margin-bottom:36px;filter:drop-shadow(0 0 18px var(--glow))}
   .mark circle{fill:var(--sun)}
-  .mark g{stroke:var(--sun);stroke-width:6;stroke-linecap:round;opacity:.85}
-  h1{font-size:clamp(1.9rem,6vw,2.6rem); letter-spacing:-.03em; margin:0 0 6px; font-weight:600}
+  .mark g{stroke:var(--sun);stroke-width:6;stroke-linecap:round}
+  h1{font-size:clamp(1.9rem,6vw,2.6rem); letter-spacing:-.03em; margin:0 0 6px; font-weight:650}
   .updated{color:var(--muted); font-size:.9rem; margin:0 0 34px}
   h2{font-size:1.05rem; margin:38px 0 10px; letter-spacing:-.01em}
-  p,li{color:#cfc5b4}
+  p,li{color:#54452c}
   .summary{
-    border:1px solid var(--line); border-left:3px solid var(--sun);
+    background:#fff; border:1px solid var(--line); border-left:3px solid var(--sun);
     border-radius:10px; padding:16px 20px; margin:0 0 8px;
+    box-shadow:0 2px 14px rgba(210,160,60,.10);
   }
-  a{color:var(--sun)}
+  a{color:var(--deep)}
   ul{padding-left:1.2em}
   footer{
     width:min(680px,88vw); margin-inline:auto;
@@ -39,8 +45,8 @@
     font-size:.84rem; color:var(--muted);
     display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
   }
-  footer a{color:var(--muted)}
-  footer a:hover{color:var(--sun)}
+  footer a{color:#8a6d3b}
+  footer a:hover{color:var(--deep)}
 </style>
 </head>
 <body>
