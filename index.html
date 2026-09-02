@@ -3,12 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My Sun Log</title>
-<meta name="description" content="Solar position, spectrum and dose, computed on your device.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='27' fill='%23f0a92c'/></svg>">
-<meta property="og:title" content="My Sun Log">
-<meta property="og:description" content="Solar position, spectrum and dose, computed on your device.">
+<title>My Sun Log — sun timer, vitamin D dose and UV index</title>
+<meta name="description" content="My Sun Log computes the sun's position, today's UV index, your vitamin D dose, safe limit and burn threshold — on your device, offline, with no account. Android and iOS, coming soon.">
+<link rel="canonical" href="https://mysunlog.com/">
+<link rel="icon" href="/media/icon.png">
+<link rel="apple-touch-icon" href="/media/icon.png">
+<meta property="og:title" content="My Sun Log — sun timer, vitamin D dose and UV index">
+<meta property="og:description" content="The sun's position, today's UV index, your vitamin D dose and burn threshold — computed on your device, offline, with no account.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://mysunlog.com/">
+<meta property="og:image" content="https://mysunlog.com/media/feature.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mysunlog.com/media/feature.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "My Sun Log",
+  "url": "https://mysunlog.com/",
+  "image": "https://mysunlog.com/media/icon.png",
+  "description": "Solar position, the arriving spectrum and the dose it carries — UV index, vitamin D dose, safe limit and burn threshold, computed on the device from published physics. No account, works offline.",
+  "operatingSystem": "Android, iOS",
+  "applicationCategory": "HealthApplication",
+  "screenshot": [
+    "https://mysunlog.com/media/screenshot-1.png",
+    "https://mysunlog.com/media/screenshot-2.png",
+    "https://mysunlog.com/media/screenshot-3.png",
+    "https://mysunlog.com/media/screenshot-4.png",
+    "https://mysunlog.com/media/screenshot-5.png",
+    "https://mysunlog.com/media/screenshot-6.png",
+    "https://mysunlog.com/media/screenshot-7.png",
+    "https://mysunlog.com/media/screenshot-8.png"
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arcane Void LLC",
+    "url": "https://arcanevoid.com/"
+  }
+}
+</script>
 <style>
   :root{
     --bg:#fffdf6; --ink:#332612; --muted:#8a7a60; --sun:#f5a623; --deep:#b45309;
@@ -62,6 +97,15 @@
   .n{display:block;font-size:2rem;font-weight:650;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--deep)}
   .l{display:block;font-size:.83rem;color:var(--muted);line-height:1.45;max-width:19ch}
   .fine{margin:38px 0 0;font-size:.82rem;color:#9c8c6e;max-width:58ch}
+  .shots{
+    display:flex; gap:18px; margin:56px 0 0; padding:4px 4px 14px;
+    overflow-x:auto; -webkit-overflow-scrolling:touch;
+  }
+  .shots img{
+    width:180px; height:auto; flex:none; border-radius:18px;
+    border:1px solid var(--line);
+    box-shadow:0 10px 30px rgba(120,85,20,.16);
+  }
   footer{
     flex:none; width:min(760px,88vw); margin-inline:auto;
     padding:26px 0 44px; border-top:1px solid var(--line);
@@ -92,6 +136,14 @@
   </div>
 
   <p class="fine">Times are worked for Fitzpatrick type II at UV index 8. Yours depend on skin type, altitude, cloud, ground surface and how much skin is uncovered. The app shows the equation behind every figure and the source it came from.</p>
+
+  <div class="shots">
+    <a href="/media/screenshot-1.png"><img src="/media/thumb-1.png" width="360" height="640" loading="lazy" alt="Today screen: the sun's arc over the mountains, UV index 7.3, vitamin D dose, safe limit and burn threshold"></a>
+    <a href="/media/screenshot-2.png"><img src="/media/thumb-2.png" width="360" height="640" loading="lazy" alt="Sunbathe timer running: safe sun used, vitamin D produced, and the photons received by wavelength band"></a>
+    <a href="/media/screenshot-3.png"><img src="/media/thumb-3.png" width="360" height="640" loading="lazy" alt="Plan your day: morning and afternoon vitamin D windows, and the peak ultraviolet hours to be careful in"></a>
+    <a href="/media/screenshot-4.png"><img src="/media/thumb-4.png" width="360" height="640" loading="lazy" alt="The log: sessions, streaks and totals, stored on the device"></a>
+    <a href="/media/screenshot-7.png"><img src="/media/thumb-7.png" width="360" height="640" loading="lazy" alt="Night screen: stars over the ridge and a countdown to dawn"></a>
+  </div>
 </main>
 
 <footer>
