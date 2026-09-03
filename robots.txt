@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mysunlog.com/sitemap.xml
+Sitemap: https://www.mysunlog.com/sitemap.xml
