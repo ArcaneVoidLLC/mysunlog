@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://www.mysunlog.com/</loc>
+    <loc>https://mysunlog.com/</loc>
     <lastmod>2026-09-01</lastmod>
-    <image:image><image:loc>https://www.mysunlog.com/media/feature.png</image:loc></image:image>
-    <image:image><image:loc>https://www.mysunlog.com/media/icon.png</image:loc></image:image>
-    <image:image><image:loc>https://www.mysunlog.com/media/screenshot-1.png</image:loc></image:image>
-    <image:image><image:loc>https://www.mysunlog.com/media/screenshot-2.png</image:loc></image:image>
-    <image:image><image:loc>https://www.mysunlog.com/media/screenshot-3.png</image:loc></image:image>
-    <image:image><image:loc>https://www.mysunlog.com/media/screenshot-4.png</image:loc></image:image>
-    <image:image><image:loc>https://www.mysunlog.com/media/screenshot-5.png</image:loc></image:image>
-    <image:image><image:loc>https://www.mysunlog.com/media/screenshot-6.png</image:loc></image:image>
-    <image:image><image:loc>https://www.mysunlog.com/media/screenshot-7.png</image:loc></image:image>
-    <image:image><image:loc>https://www.mysunlog.com/media/screenshot-8.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/feature.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/icon.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/screenshot-1.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/screenshot-2.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/screenshot-3.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/screenshot-4.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/screenshot-5.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/screenshot-6.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/screenshot-7.png</image:loc></image:image>
+    <image:image><image:loc>https://mysunlog.com/media/screenshot-8.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://www.mysunlog.com/safety.html</loc>
+    <loc>https://mysunlog.com/safety.html</loc>
     <lastmod>2026-09-02</lastmod>
   </url>
   <url>
-    <loc>https://www.mysunlog.com/privacy.html</loc>
+    <loc>https://mysunlog.com/privacy.html</loc>
     <lastmod>2026-09-01</lastmod>
   </url>
   <url>
-    <loc>https://www.mysunlog.com/terms.html</loc>
+    <loc>https://mysunlog.com/terms.html</loc>
     <lastmod>2026-09-01</lastmod>
   </url>
 </urlset>
