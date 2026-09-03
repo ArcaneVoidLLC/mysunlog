@@ -100,7 +100,7 @@
   .contact{margin:44px 0 0;padding:22px 24px;border-radius:16px;background:rgba(255,255,255,.55);max-width:58ch}
   .contact h2{margin:0 0 10px;font-size:1.05rem;color:#3d3222}
   .contact p{margin:6px 0;font-size:.95rem;color:#6b5b41}
-  .contact a{color:#b8730a;font-weight:600;text-decoration:none}
+  .contact a,.contact .em{color:#b8730a;font-weight:600;text-decoration:none}
   .contact a:hover{text-decoration:underline}
   .shots{
     display:flex; gap:18px; margin:56px 0 0; padding:4px 4px 14px;
@@ -152,15 +152,24 @@
 
   <section class="contact" id="contact">
     <h2>Talk to us</h2>
-    <p>We'd love to hear what you like, and what you don't: <a href="mailto:feedback@mysunlog.com">feedback@mysunlog.com</a></p>
-    <p>Having a problem? <a href="mailto:support@mysunlog.com">support@mysunlog.com</a></p>
+    <p>We'd love to hear what you like, and what you don't: <span class="em" data-u="feedback" data-d="mysunlog" data-t="com">feedback [at] mysunlog [dot] com</span></p>
+    <p>Having a problem? <span class="em" data-u="support" data-d="mysunlog" data-t="com">support [at] mysunlog [dot] com</span></p>
   </section>
 </main>
 
 <footer>
   <span>Android — coming soon · iOS — coming soon</span>
-  <span><a href="/safety.html">Safety</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="mailto:support@mysunlog.com">Contact</a> · <a href="https://arcanevoid.com">Arcane Void LLC</a></span>
+  <span><a href="/safety.html">Safety</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/#contact">Contact</a> · <a href="https://arcanevoid.com">Arcane Void LLC</a></span>
 </footer>
 
+<script>
+/* Addresses are assembled here rather than written into the page, so
+   scrapers reading the HTML do not get them. */
+document.querySelectorAll('span.em').forEach(function(s){
+  var a=s.dataset.u+'@'+s.dataset.d+'.'+s.dataset.t;
+  var l=document.createElement('a');l.href='mailto:'+a;l.textContent=a;l.className='em';
+  s.replaceWith(l);
+});
+</script>
 </body>
 </html>

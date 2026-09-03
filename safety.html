@@ -98,7 +98,7 @@
   <p>My Sun Log is a tool to help you think about the sun, not a substitute for your own judgement or for professional care. Use it as one input among others, keep your own eyes on your own skin, and when the two disagree, believe your skin. Your use of the app is also governed by our <a href="/terms.html">Terms of Use</a>, which set out the limits of our liability.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this notice: <a href="mailto:hello@arcanevoid.com">hello@arcanevoid.com</a>.</p>
+  <p>Questions about this notice: <span class="em" data-u="hello" data-d="arcanevoid" data-t="com">hello [at] arcanevoid [dot] com</span>.</p>
 </main>
 
 <footer>
@@ -106,5 +106,14 @@
   <span><a href="https://arcanevoid.com">Arcane Void LLC</a></span>
 </footer>
 
+<script>
+/* Addresses are assembled here rather than written into the page, so
+   scrapers reading the HTML do not get them. */
+document.querySelectorAll('span.em').forEach(function(s){
+  var a=s.dataset.u+'@'+s.dataset.d+'.'+s.dataset.t;
+  var l=document.createElement('a');l.href='mailto:'+a;l.textContent=a;l.className='em';
+  s.replaceWith(l);
+});
+</script>
 </body>
 </html>
