@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.arcanevoid.mysunlog",
+      "sha256_cert_fingerprints":
+        ["64:44:7C:E2:BD:60:DA:06:52:14:20:44:8A:5E:79:C8:5C:21:E5:7F:DE:AA:B2:96:44:6E:81:4F:B2:46:A3:2B"]
+    }
+  }
+]
